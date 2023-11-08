@@ -146,7 +146,7 @@ class ProductList
 
             }
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("----------------------------------------------");
+            Console.WriteLine("--------------------------------------------");
         }
     }
 }
