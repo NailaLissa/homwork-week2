@@ -73,12 +73,22 @@ class ProductList
         bool isInt = int.TryParse(number, out int value);
         if (isInt)
         {
+            
             int price = Convert.ToInt32(number);
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(" the product was succefully added!");
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("----------------------------------------------");
-            products.Add(new Product(category, name, price));
+            if (price > 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(" the product was succefully added!");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("----------------------------------------------");
+                products.Add(new Product(category, name, price));
+            }else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Its not a positive number");
+               
+            }
+            
         } else
         {
             Console.ForegroundColor = ConsoleColor.Red;
