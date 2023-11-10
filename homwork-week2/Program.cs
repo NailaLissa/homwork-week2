@@ -2,6 +2,14 @@
 using System.ComponentModel.Design;
 using System.Diagnostics;
 using System.Xml.Linq;
+
+/*   Write a console app which starts by asking the user for: Category / Product Name/ Price and run some function
+1- to add items to the list(s) until you write "q" (for quit). 
+2- to Summarize price and printing list and sorted from low price to high
+3- Search function to search for product name in presented list*/
+
+
+
 // creating a List Object 
 ProductList productList = new ProductList();
 
