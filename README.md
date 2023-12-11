@@ -1,2 +1,3 @@
-<h1>simple console application in C# </h1>
+<h1>Product List</h1>
+<h2>simple console application in C# </h2>
 <p>This console application prompts the user to enter product details, allows them to quit by entering 'q', displays a sorted list with a total price, and includes a search function for Level 4. It also handles invalid input for the price.</p>
